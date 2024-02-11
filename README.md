@@ -19,10 +19,8 @@ Deploying Postgres with kubectl apply:
 
 Create PV and PVC for Sonarqube:
 -------------
-    kubectl apply -f sonar-pv-data.yml
-    kubectl apply -f sonar-pv-extensions.yml
-    kubectl apply -f sonar-pvc-data.yml
-    kubectl apply -f sonar-pvc-extentions.yml
+    kubectl apply -f sonar-storage.yaml
+
 Create configmaps for URL which we use in Sonarqube:
 -------
     kubectl apply -f sonar-configmap.yaml
