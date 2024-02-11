@@ -28,6 +28,9 @@ Deploy Sonarqube:
 -------------
     kubectl apply -f sonar-deployment.yml
     kubectl apply -f sonar-service.yml
+Deploy Sonarqube ingress:
+-------------
+    kubectl apply -f sonar-ingress.yml
 Check secrets:
 -------
     kubectl get secrets
